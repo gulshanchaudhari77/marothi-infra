@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import img10 from '../components/Assets/DIG1.png'
+import marothi1 from '../components/Assets/marothi-1.avif'
 
 const About = () => {
   const navigate = useNavigate();
@@ -38,28 +39,28 @@ const About = () => {
           <div className=' lg:w-[19em] w-auto lg:absolute top-[10rem] 'data-aos="fade-up" 
   data-aos-duration="1600" 
   data-aos-delay="300">
-            <img src={img1} alt="" className=' brightness-75 hover:brightness-100 duration-100' />
+            <img src={marothi1} alt="" className=' brightness-75 hover:brightness-100 duration-100' />
             <div className=' mx-[5.7rem] lg:ml-0'>
-              <p className=' text-[#52a2ca] text-lg font-semibold pt-3'>Spruha Kusum</p>
-              <p className=' text-lg'>@Omkar Nagar</p>
+              <p className=' text-[#52a2ca] text-lg font-semibold pt-3'>Marothi-Infra</p>
+              <p className=' text-lg'>@Tumsar</p>
             </div>
           </div>
           <div className=' lg:w-[19em] w-auto lg:absolute left-[20rem]'data-aos="fade-up" 
   data-aos-duration="1600" 
   data-aos-delay="500">
-            <img src={img2} alt="" className=' brightness-75 hover:brightness-100 duration-100' />
+            <img src={marothi1} alt="" className=' brightness-75 hover:brightness-100 duration-100' />
             <div className=' mx-[5.7rem] lg:ml-0'>
-              <p className=' text-[#52a2ca] text-lg font-semibold pt-3'>Spruha Enclave</p>
-              <p className=' text-lg'>@Shivshakti Nagar</p>
+              <p className=' text-[#52a2ca] text-lg font-semibold pt-3'>Marothi-Infra</p>
+              <p className=' text-lg'>@Bhandara</p>
             </div>
           </div>
           <div className=' lg:w-[19em] w-auto lg:absolute left-[40rem] top-[-10rem]'data-aos="fade-up" 
   data-aos-duration="1600" 
   data-aos-delay="700">
-            <img src={img3} alt="" className=' brightness-75 hover:brightness-100 duration-100' />
+            <img src={marothi1} alt="" className=' brightness-75 hover:brightness-100 duration-100' />
             <div className=' mx-[5.7rem] lg:ml-0'>
-              <p className=' text-[#52a2ca] text-lg font-semibold pt-3'>Spruha Sindhu</p>
-              <p className=' text-lg'>@Gurukunj Nagar</p>
+              <p className=' text-[#52a2ca] text-lg font-semibold pt-3'>Marothi-Infra</p>
+              <p className=' text-lg'>@Nagpur</p>
             </div>
           </div>
           <div className=' lg:absolute my-9 right-4 top-[25rem] mx-[2rem] lg:ml-0'data-aos="fade-up" 

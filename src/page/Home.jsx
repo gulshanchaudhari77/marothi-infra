@@ -20,6 +20,10 @@ import { IoIosArrowUp } from 'react-icons/io'
  import AOS from 'aos';
  import 'aos/dist/aos.css';
 import new1 from '../components/Assets/new.jpg'
+import marothi1 from '../components/Assets/marothi-1.avif'
+import marothi2 from '../components/Assets/marothi3.jpg'
+import marothipla1 from '../components/Assets/marothiplan2.png'
+import marothiplan3 from '../components/Assets/marothiplan3.jpg'
 
 const Home = () => {
   const location = useLocation();
@@ -39,7 +43,7 @@ const Home = () => {
     }
   }
 
-  const sliderimg = [slider1, slider2, slider3, slider4, slider5];
+  const sliderimg = [marothi1, marothi2, slider3, slider4, slider5];
   const [sliderIndex, setSliderIndex] = useState(0);
   useEffect(() => {
     AOS.init({
@@ -62,23 +66,15 @@ const Home = () => {
              {/* <img src={homImg2} alt="img2" className='w-full lg:w-auto hidden lg:flex' /> */}
           </div>
 
-          {/* <div className='flex flex-col lg:flex-row w-full lg:w-[97rem]'>
-                        <div className='flex w-full lg:w-[130rem]'>
-                            <img src={homImg1} alt="img1" className='w-full lg:w-auto' />
-                            <img src={homImg2} alt="img2" className='w-full lg:w-auto' />
-                        </div>
-
-                        <div className='w-full text-lg lg:text-2xl p-0 gap-4 lg:gap-52 flex flex-col h-full lg:h-[100%] justify-between'>
-                            <div className='h-1/2'>Notifications</div>
-                            <div className='h-1/2'>Guidelines</div>
-                        </div>
-                    </div> */}
+         
         </div>
+
+        
 
         <div className='flex flex-col lg:flex-row'>
           <div className='border-y border-r flex items-center gap-4 lg:gap-[3.8rem] pr-4 lg:pr-10 w-full lg:w-[55rem] py-8 lg:py-16 pl-0'>
             <p className='text-lg lg:text-[2.7rem] text-center w-full' data-aos="zoom-in">About Us</p>
-            <p className='text-[#C1C1C1] text-sm lg:text-base w-full lg:w-[89rem]' data-aos="zoom-in">Gulhane Properties, founded in 2020 was built on the core values of trust, satisfaction and innovation. We offer beautiful homes with quality construction. After years and over projects in the city, we have cemented our place in the industry</p>
+            <p className='text-[#C1C1C1] text-sm lg:text-base w-full lg:w-[89rem]' data-aos="zoom-in">Marothi-Infra founded in 2020 was built on the core values of trust, satisfaction and innovation. We offer beautiful homes with quality construction. After years and over projects in the city, we have cemented our place in the industry</p>
           </div>
           <div className='text-base lg:text-[2.1rem] py-6 pl-4 lg:pl-16 font-thin flex w-full lg:w-[65rem] gap-4 lg:gap-12 justify-center items-center text-center border-y'>
             <p className='cursor-pointer' onClick={() => navigate("/about")}>Learn More</p>
@@ -107,7 +103,7 @@ const Home = () => {
               </button>
             </div>
             <div className='pt-8 lg:pt-16 hidden lg:flex '>
-              <img src={img3} className='w-[40rem] lg:w-auto' width={550} alt="" />
+              <img src='' className='w-[40rem] lg:w-auto' width={550} alt="" />
             </div>
           </div>
           <div className='mt-4 lg:mt-0'>
@@ -117,14 +113,16 @@ const Home = () => {
       </section>
 
       {/* section 3 */}
-      <section className='w-full border-b mt-8 lg:mt-16'>
+      <section className='w-full border-b mt-8 lg:mt-16 m-auto'>
         <div className='text-center text-2xl lg:text-[2.7rem] lg:leading-[4rem] tracking-wide w-full lg:w-[50rem] mx-auto pt-6 lg:pt-1 pb-10 lg:pb-20'>Our Key of Construction Planing, and <span className='text-[#52a2ca]'>business Goal.</span></div>
         <div className='flex flex-col lg:flex-row  gap-4 lg:gap-10 lg:flex-wrap lg:mb-32 mb-10' data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1000">
-          <img src={planingImg1} className='w-full lg:w-auto brightness-75 hover:brightness-100 duration-100' alt="" />
-          <img src={planingImg2} className='w-full lg:w-auto brightness-75 hover:brightness-100 duration-100' alt="" />
-          <img src={planingImg3} className='w-full lg:w-auto brightness-75 hover:brightness-100 duration-100' alt="" />
+          <img src={marothiplan3} className='h-[560px] w-[480px] lg:w-auto brightness-75 hover:brightness-100 duration-100' alt="" />
+          <img src={marothipla1} className='h-[560px] w-[430px] lg:w-auto brightness-75 hover:brightness-100 duration-100' alt="" />
+
+          <img src={planingImg3} className='h-[560px] w-[430px] lg:w-auto brightness-75 hover:brightness-100 duration-100' alt="" />
+          
         </div>
         {/* <div className='my-10 lg:my-20 flex justify-end w-full'>
                     <button className='border rounded-lg px-3 text-sm lg:text-lg py-1'>Read More</button>
@@ -137,24 +135,25 @@ const Home = () => {
 
         <div className='flex flex-col lg:flex-row justify-between gap-10 lg:gap-10' data-aos='zoom-in-right'>
           <div>
-            <img src={slider2} className='w-full lg:w-auto brightness-75 hover:brightness-100 duration-100' alt='' />
+            <img src={marothi1} className='w-full lg:w-auto brightness-75 hover:brightness-100 duration-100 h-[75%]' alt='' />
             <div className='rounded-tl-full bg-[#D9D9D933] border border-[#F130A2] rounded-br-full flex flex-col justify-center items-center align-middle py-6 mt-4 lg:mt-10 text-lg lg:text-3xl' data-aos='zoom-in-left'>
-              <p className='text-[#F130A2]'>Spruha Kusum</p>
+              <p className='text-[#F130A2]'>Marothi-Infra</p>
+              <p>@Tumsar</p>
+            </div>
+          </div>
+          <div>
+            <img src={marothi1} className='w-full lg:w-auto brightness-75 hover:brightness-100 duration-100 h-[75%]' alt='' />
+            <div className='rounded-tl-full bg-[#D9D9D933] border border-[#F130A2] rounded-br-full flex flex-col justify-center items-center align-middle py-6 mt-4 lg:mt-10 text-lg lg:text-3xl' data-aos='zoom-in-left'>
+              <p className='text-[#F130A2]'>Marothi-Infra</p>
+              <p>@Bhandara</p>
+            </div>
+          </div>
+          
+          <div>
+            <img src={marothi1} className='w-full lg:w-auto brightness-75 hover:brightness-100 duration-100 h-[75%]' alt='' />
+            <div className='rounded-tl-full bg-[#D9D9D933] border border-[#F130A2] rounded-br-full flex flex-col justify-center items-center align-middle py-6 mt-4 lg:mt-10 text-lg lg:text-3xl' data-aos='zoom-in-left'>
+              <p className='text-[#F130A2]'>Marothi-Infra</p>
               <p>@Omkar Nagar</p>
-            </div>
-          </div>
-          <div>
-            <img src={projectimg2} className='w-full lg:w-auto brightness-75 hover:brightness-100 duration-100' alt='' />
-            <div className='rounded-tl-full bg-[#D9D9D933] border border-[#F130A2] rounded-br-full flex flex-col justify-center items-center align-middle py-6 mt-4 lg:mt-10 text-lg lg:text-3xl ' data-aos='zoom-in-left'>
-              <p className='text-[#52a2ca]'>Spruha Enclave</p>
-              <p>@Shivshakti Nagar</p>
-            </div>
-          </div>
-          <div>
-            <img src={projectimg3} className='w-full lg:w-auto brightness-75 hover:brightness-100 duration-100' alt='' />
-            <div className='rounded-tl-full bg-[#D9D9D933] border border-[#F130A2] rounded-br-full flex flex-col justify-center items-center align-middle py-6 mt-4 lg:mt-10 text-lg lg:text-3xl' data-aos='zoom-in-left'>
-              <p className='text-[#52a2ca]'>Spruha Sindhu</p>
-              <p>@Gurukunj Nagar</p>
             </div>
           </div>
         </div>
@@ -186,7 +185,7 @@ const Home = () => {
                 <span className='text-[#52a2ca]'>Upcoming</span> Project -
               </p>
               <img
-                src={ServisesImg}
+                src={marothi1}
                 alt=''
                 className='w-full lg:w-auto brightness-75 hover:brightness-100 duration-100'
               />
